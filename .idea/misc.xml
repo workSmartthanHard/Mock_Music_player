@@ -11,7 +11,14 @@
         <entry key="..\:/Android/AndroidStudioProjects/MockProject/MusicPlayer/app/src/main/res/layout/activity_splash_screen.xml" value="0.23001282599401454" />
         <entry key="..\:/Android/AndroidStudioProjects/MockProject/MusicPlayer/app/src/main/res/layout/fragment_home.xml" value="0.23001282599401454" />
         <entry key="..\:/Android/AndroidStudioProjects/MockProject/MusicPlayer/app/src/main/res/layout/splash.xml" value="0.21846943138093203" />
-        <entry key="..\:/music player/Mock_Music_player/app/src/main/res/layout/activity_main.xml" value="0.2658514492753623" />
+        <entry key="..\:/music player/Mock_Music_player/app/src/main/res/drawable/home_selector.xml" value="0.133" />
+        <entry key="..\:/music player/Mock_Music_player/app/src/main/res/drawable/setting_selector.xml" value="0.133" />
+        <entry key="..\:/music player/Mock_Music_player/app/src/main/res/drawable/shadow.xml" value="0.2345" />
+        <entry key="..\:/music player/Mock_Music_player/app/src/main/res/drawable/song_selector.xml" value="0.133" />
+        <entry key="..\:/music player/Mock_Music_player/app/src/main/res/layout/activity_main.xml" value="0.23835319609967498" />
+        <entry key="..\:/music player/Mock_Music_player/app/src/main/res/layout/fragment_home.xml" value="0.3009833262077811" />
+        <entry key="..\:/music player/Mock_Music_player/app/src/main/res/layout/fragment_setting.xml" value="0.3009833262077811" />
+        <entry key="..\:/music player/Mock_Music_player/app/src/main/res/layout/fragment_songs.xml" value="0.3009833262077811" />
         <entry key="..\:/music player/Mock_Music_player/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3009833262077811" />
       </map>
     </option>

@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/music_player_nav">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/music_player_nav"
+    app:startDestination="@id/home">
 
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.baseproject.view.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_setting"
+            app:destination="@id/setting" />
+        <action
+            android:id="@+id/action_home_to_songs"
+            app:destination="@id/songs" />
+    </fragment>
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.baseproject.view.Setting"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/songs"
+        android:name="com.example.baseproject.view.Songs"
+        android:label="fragment_songs"
+        tools:layout="@layout/fragment_songs" />
 </navigation>

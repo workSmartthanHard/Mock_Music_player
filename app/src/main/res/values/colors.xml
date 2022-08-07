@@ -9,6 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="back_ground">#181B2C</color>
     <color name="nav_bottom_bg">#151827</color>
+    <color name="nav_bottom_item_unselected">#63666E</color>
 
-    #151827
 </resources>

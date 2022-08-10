@@ -10,5 +10,8 @@
     <color name="back_ground">#181B2C</color>
     <color name="nav_bottom_bg">#151827</color>
     <color name="nav_bottom_item_unselected">#63666E</color>
+    <color name="nav_drawer_head_bg">#272B36</color>
+    <color name="nav_drawer_bg">#10121D</color>
+    <color name="text_01">#C1C0C0</color>
 
 </resources>

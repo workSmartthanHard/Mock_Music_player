@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_drawer_themes"
+        android:icon="@drawable/selector_themes"
+        android:title="@string/themes"
+        />
+    <item
+        android:id="@+id/nav_ringtone"
+        android:icon="@drawable/selector_ringtone"
+        android:title="@string/ringtone"
+
+        />
+    <item
+        android:id="@+id/nav_sleep_timer"
+        android:icon="@drawable/selector_sleep_timer"
+        android:title="@string/sleep_timer"
+        />
+    <item
+        android:id="@+id/nav_equaliser"
+        android:icon="@drawable/selector_equa"
+        android:title="@string/equaliser"
+        />
+    <item
+        android:id="@+id/nav_driver_mode"
+        android:icon="@drawable/selector_driver_mode"
+        android:title="@string/driver_mode"
+        />
+    <item
+        android:id="@+id/nav_hidden_folders"
+        android:icon="@drawable/selector_hidden_folder"
+        android:title="@string/hidden_folders"
+        />
+    <item
+        android:id="@+id/nav_scan_media"
+        android:icon="@drawable/selector_scan_media"
+        android:title="@string/scan_media"
+        />
+
+</menu>

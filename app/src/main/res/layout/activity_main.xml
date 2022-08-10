@@ -7,31 +7,79 @@
     tools:context=".view.MainActivity"
     android:orientation="vertical">
 
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/music_player_nav"
-        />
-
 <!--    <View-->
 <!--        android:id="@+id/eclipse"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="20dp"-->
 <!--        android:layout_above="@id/bottom_navigation_view"-->
 <!--        android:background="@drawable/shadow" />-->
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_view"
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/height_bottom_nav"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_nav_menu"
-        android:background="@color/nav_bottom_bg"
-        app:itemIconTint="@color/nav_bottom_item_unselected"
-        app:itemIconSize="@dimen/navigation_icon_size"
-        />
+        android:layout_height="match_parent"
+        tools:openDrawer="start">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/tool_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/back_ground"
+                    >
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/search_bar"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_gravity="end"
+                        app:queryBackground="@null"
+                        android:background="@drawable/search_bg_shape"
+                        app:iconifiedByDefault="false"
+
+                        />
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainerView"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/music_player_nav"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation_view"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentBottom="true"
+                android:background="@color/nav_bottom_bg"
+                app:itemIconSize="@dimen/navigation_icon_size"
+                app:menu="@menu/menu_bottom_nav"
+                />
+        </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/layout_head_drawer"
+            android:layout_gravity="start"
+            android:background="@color/nav_drawer_bg"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/menu_drawer_nav" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
 </RelativeLayout>

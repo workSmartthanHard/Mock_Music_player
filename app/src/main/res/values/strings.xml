@@ -5,4 +5,14 @@
     <string name="home">home</string>
     <string name="songs">song</string>
     <string name="setting">profile</string>
+    <string name="themes">Themes</string>
+    <string name="ringtone">Ringtone Cutter</string>
+    <string name="sleep_timer">Sleep timer</string>
+    <string name="equaliser">Equaliser</string>
+    <string name="driver_mode">Driver Mode</string>
+    <string name="hidden_folders">Hidden Folders</string>
+    <string name="scan_media">Scan Media</string>
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation drawer</string>
+
 </resources>
